@@ -45,7 +45,13 @@ class DefaultRegistrationRootComponent(
             is ChildConfig.UserInfo -> {
                 RegistrationRootComponent.Child.UserInfo(
                     DefaultRegisterUserInfoComponent(
-                        componentContext = componentContext
+                        componentContext = componentContext,
+                        onBackClicked = {
+                            navigation.pop()
+                        },
+                        onContinueClicked = {
+                            navigation.pushNew(ChildConfig.Password)
+                        }
                     )
                 )
             }
