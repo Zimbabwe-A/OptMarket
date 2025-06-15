@@ -9,9 +9,17 @@ interface RegisterUserInfoComponent {
     fun onBack()
     fun onContinue()
 
+    fun onEmailChanged(email: String)
+    fun onFirstNameChanged(firstName: String)
+    fun onLastNameChanged(lastName: String)
+    fun onWholesalerClick()
+    fun onBuyerClick()
+
     data class State(
         val email: String,
         val firstName: String,
-        val lastName: String
+        val lastName: String,
+        val wholesaler: Boolean,
+        val buyer: Boolean
     )
 }
