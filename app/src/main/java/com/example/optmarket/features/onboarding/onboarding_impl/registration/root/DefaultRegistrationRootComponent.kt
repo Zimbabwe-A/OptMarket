@@ -59,7 +59,10 @@ class DefaultRegistrationRootComponent(
             is ChildConfig.Password -> {
                 RegistrationRootComponent.Child.Password(
                     DefaultRegisterPasswordComponent(
-                        componentContext = componentContext
+                        componentContext = componentContext,
+                        onBackClicked = {
+                            navigation.pop()
+                        },
                     )
                 )
             }
