@@ -2,7 +2,6 @@ package com.example.optmarket.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
@@ -14,13 +13,13 @@ val AppTypography = Typography(
         letterSpacing = (-0.5).sp
     ),
     headlineLarge = TextStyle( // 🔠 Заголовок экрана
-        fontSize = 28.sp,
-        fontWeight = FontWeight.SemiBold,
-        letterSpacing = 0.sp
+        fontSize = 26.sp,
+        fontWeight = FontWeight(600),
+        letterSpacing = 0.sp,
     ),
     headlineMedium = TextStyle( // 🔠 Подзаголовок
-        fontSize = 24.sp,
-        fontWeight = FontWeight.Medium,
+        fontSize = 22.sp,
+        fontWeight = FontWeight(500),
         letterSpacing = 0.sp
     ),
     titleLarge = TextStyle( // 🏷️ Названия разделов, карточек
@@ -35,12 +34,12 @@ val AppTypography = Typography(
     ),
     bodyLarge = TextStyle( // 📄 Обычный текст
         fontSize = 16.sp,
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight(400),
         letterSpacing = 0.5.sp
     ),
     bodyMedium = TextStyle( // 📄 Текст поменьше (описания)
         fontSize = 14.sp,
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight(400),
         letterSpacing = 0.25.sp
     ),
     labelLarge = TextStyle( // 🏷️ Текст на кнопках
@@ -50,7 +49,7 @@ val AppTypography = Typography(
     ),
     labelMedium = TextStyle( // 🏷️ Мелкие метки (в фильтрах, меню)
         fontSize = 12.sp,
-        fontWeight = FontWeight.Medium,
+        fontWeight = FontWeight(500),
         letterSpacing = 0.5.sp
     ),
     labelSmall = TextStyle( // 🏷️ Подписи к иконкам, табам
